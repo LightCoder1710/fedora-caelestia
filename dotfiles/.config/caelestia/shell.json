@@ -1,0 +1,15 @@
+{
+    "dashboard": {
+        "mediaUpdateInterval": 2000,
+        "resourceUpdateInterval": 10000
+    },
+    "paths": {
+        "wallpaperDir": "/home/light/download/Wallpaper"
+    },
+    "services": {
+        "smartScheme": true,
+        "useFahrenheit": false,
+        "useTwelveHourClock": false,
+        "wallpaperHwDecoder": "software"
+    }
+}

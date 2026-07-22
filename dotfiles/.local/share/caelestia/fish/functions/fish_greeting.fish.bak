@@ -1,0 +1,16 @@
+function fish_greeting
+    echo -ne '\x1b[38;5;16m'  # Set colour to primary
+    set_color normal
+
+    # Chọn một ảnh ngẫu nhiên từ thư mục "Use daily" trong "Bản tải về"
+    set -l img_dir "/home/light/Bản tải về/Use daily"
+    set -l images $img_dir/*.jpg
+    if test (count $images) -gt 0
+        set -l rand_idx (random 1 (count $images))
+        set -l rand_img $images[$rand_idx]
+        # Hiển thị ảnh qua fastfetch sử dụng giao thức hình ảnh sixel của foot terminal
+        fastfetch --logo "$rand_img" --logo-type sixel --logo-width 32 --logo-height 16 --key-padding-left 5
+    else
+        fastfetch --key-padding-left 5
+    end
+end

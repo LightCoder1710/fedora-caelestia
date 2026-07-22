@@ -1,0 +1,17 @@
+[Groups/0]
+# Group Name
+Name="Group 2"
+# Layout
+Default Layout=gb
+# Default Input Method
+DefaultIM=bamboo
+
+[Groups/0/Items/0]
+# Name
+Name=bamboo
+# Layout
+Layout=
+
+[GroupOrder]
+0="Group 2"
+
